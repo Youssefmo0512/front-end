@@ -1,0 +1,134 @@
+/* start global rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#2196f3;
+    --main-color-alt:#1787e0;
+    --main-transition: .3s;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "cairo",sans-serif;
+
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px; /* تصحيح spelling من rigtt إلى right */
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:992px){ /* تصحيح من 92px إلى 992px */
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width:1200px){ /* تصحيح من min-width1200px إلى min-width:1200px */
+    .container{
+        width:1170px;
+    }
+}
+
+/* End global rules */
+/* start header  */
+.header{
+    background-color: white;
+    position: relative;
+    -webkit-box-shadow:0 0 10px #ddd;
+    -moz-box-shadow:0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.header .logo img{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header .main-nav{
+    display: flex;
+
+}
+.header .main-nav > li > a {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   height: 72px;
+    color: black;
+    position: relative;
+    padding: 0 30px;
+    transition: var(--main-transition);
+}
+.header .main-nav > li > a:hover ::before{
+    left: 0;
+}
+.header .main-nav > li > a:hover {
+    color: var(--main-color);
+}
+/* End   header  */
+/* start home */
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.home .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.home .text{
+    flex: 1;
+    padding: 20px;
+}
+.home .image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.home .image img {
+    width: 300px;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home .image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+}
+/* end home */
