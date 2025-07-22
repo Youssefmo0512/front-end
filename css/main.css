@@ -132,3 +132,32 @@ ul{
 
 }
 /* end home */
+/* start photos */
+.photos {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto; /* يخلي الجريد في نص الصفحة */
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.images img:hover {
+  transform: scale(1.1);
+}
+
+/* end photos */
